@@ -210,7 +210,7 @@ header {
     max-width: 550px;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0px,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     border-left: 5px solid #3984c6;
 }
 
