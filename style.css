@@ -1,0 +1,357 @@
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background: #ffffff;
+    color: #26364a;
+}
+
+/* Navbar */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    width: 100%;
+    padding: 12px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.navbar .logo {
+    transform: none;
+    color: #3984c6;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #26364a;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #3984c6;
+}
+
+/* Nav Buttons Container */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Yahan se aap buttons ke darmiyaan ki space ko kam ya zyada control kar sakte hain */
+}
+
+/* Navbar Buttons Style */
+.navbar .btn,
+.navbar .cv-btn,
+.navbar .portfolio-btn {
+    transform: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 0 14px;
+    border: 2px solid #3984c6;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.navbar .btn,
+.navbar .portfolio-btn {
+    background: #3984c6;
+    color: white;
+}
+
+.navbar .cv-btn {
+    background: white;
+    color: #3984c6;
+}
+
+.navbar .btn:hover,
+.navbar .portfolio-btn:hover {
+    background: white;
+    color: #3984c6;
+}
+
+.navbar .cv-btn:hover {
+    background: #3984c6;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #eff7ff;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.welcome {
+    color: #3984c6;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 span,
+.heading span {
+    color: #3984c6;
+}
+
+.hero-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    line-height: 1.8;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #3984c6;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    height: auto;
+}
+
+.hero-text .btn:hover {
+    background: #245b91;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 6px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Common Sections */
+.section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.light {
+    background: #eff7ff;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Education */
+.info-card {
+    background: white;
+    padding: 30px;
+    max-width: 550px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0px,0,0,0.08);
+    border-left: 5px solid #3984c6;
+}
+
+.info-card h3 {
+    color: #3984c6;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    margin: 10px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px 35px;
+    background: #eff7ff;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #3984c6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    background: #3984c6;
+    color: white;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #3984c6;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.7;
+}
+
+/* Contact */
+.contact-box {
+    background: #eff7ff;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 2.2;
+}
+
+/* Footer */
+footer {
+    background: #26364a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .navbar .btn,
+    .navbar .cv-btn,
+    .navbar .portfolio-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 280px;
+    }
+
+    .section {
+        padding: 55px 7%;
+    }
+
+    .heading {
+        font-size: 29px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
